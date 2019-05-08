@@ -4,7 +4,6 @@ class RecipesController < ApplicationController
   end
 
   def create
-    fail
     @recipe = Recipe.create(recipe_params)
     redirect_to @recipe
   end
