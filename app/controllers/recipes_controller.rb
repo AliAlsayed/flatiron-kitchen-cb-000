@@ -7,6 +7,10 @@ class RecipesController < ApplicationController
     @recipe = Recipe.create(recipe_params)
   end
 
+  def show
+    @recipe = Recipe.find(params[:id])
+  end
+
   private
 
     def recipe_params
